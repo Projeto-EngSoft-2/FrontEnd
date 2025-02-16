@@ -1,0 +1,75 @@
+.reports-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.reports-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.error-message {
+    color: red;
+}
+
+.reports-list {
+    list-style: none;
+    padding: 0;
+}
+
+.report-item {
+    margin: 15px 0;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.report-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+/* ==========================
+   NAVBAR INFERIOR
+   ========================== */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #005a8d;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.bottom-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.bottom-nav a i {
+    font-size: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .bottom-nav {
+        padding: 12px 0;
+    }
+
+    .bottom-nav a {
+        font-size: 14px;
+    }
+
+    .bottom-nav a i {
+        font-size: 18px;
+    }
+}
