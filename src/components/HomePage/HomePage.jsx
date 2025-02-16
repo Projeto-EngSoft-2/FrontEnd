@@ -5,9 +5,11 @@ import feature1 from "../../assets/feature1.png";
 import feature2 from "../../assets/feature2.png";
 import feature3 from "../../assets/feature3.png";
 import mapPng from "../../assets/map.png";
+import {useNavigate} from "react-router-dom";
 
 
 export default function HomePage() {
+    const navigate = useNavigate();
     return (
         <div className="container">
             <Header/>
@@ -20,8 +22,8 @@ export default function HomePage() {
                     Com o (nome do projeto) é possível! Você pode enviar relatos de problemas, que serão encaminhados para o órgão responsável e solucionados.
                 </p>
                 <div className="hero-buttons">
-                    <button className="register-button">cadastre-se</button>
-                    <button className="login-button">entrar</button>
+                    <button className="register-button" onClick={() => navigate("/register")}>cadastre-se</button>
+                    <button className="login-button" onClick={() => navigate("/login")}>entrar</button>
                 </div>
             </section>
 
@@ -65,7 +67,7 @@ export default function HomePage() {
                         <h2 className="monitoring-title">
                             Monitore a cidade e descubra todos os pontos de melhorias
                         </h2>
-                        <button className="register-button">cadastre-se</button>
+                        <button className="register-button" onClick={() => navigate("/register")}>cadastre-se</button>
                     </div>
                     <div className="monitoring-image-container">
                         <img
